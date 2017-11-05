@@ -11,10 +11,6 @@ defmodule X do
     draw(acc ++ [line(size, i)], size, i+1)
   end
 
-  def draw(1) do
-    "X\n"
-  end
-
   def draw(size) do
     draw([], size-1, 0)
   end
